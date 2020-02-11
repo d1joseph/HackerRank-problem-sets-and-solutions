@@ -16,7 +16,7 @@ import textwrap
 def wrap(string, max_width):
     #assign the TextWrapepr method
     wrapper = textwrap.TextWrapper(width=max_width)
-    #pass the string parameter and assign to a fomartted string and call the wrapper method.
+    #pass the string parameter and assign to a formatted string and call the wrapper method.
     format_str = wrapper.fill(text=string)
     #return the formatted wrapped string
     return format_str
