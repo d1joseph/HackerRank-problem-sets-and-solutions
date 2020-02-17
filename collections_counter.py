@@ -22,30 +22,18 @@ Your task is to compute how much money your client has earned.
 #output format
 #print the total amount earned (calculated as a function of N number of lines following the first 3 parameters.)
 
-from collections import Counter as c
-import random as r
-import sys
+import collections
 
+numShoes = int(input())
+shoes = collections.Counter(map(int, input().split()))
+numCust = int(input())
 
+income = 0
 
-total_shoes = int(input('How many shoes do you need?: '))
-total_customers = int(input('How many customers checking out?: '))
-order_list = []
-shoe_sizes = []
+for i in range(numCust):
+    size, price = map(int, input().split())
+    if shoes[size]:
+        income += price
+        shoes[size] -= 1
 
-i = 0
-while i <= total_customers:
-    order_list.append(int(input('Customer '+ str(i) + ' selected size?: ')))
-    i += 1
-
-def make_shoes(total_shoes):
-    for x in range(total_shoes):
-        shoe_sizes.append(r.randint(0,16))
-
-
-def check_out(total_customers):
-    shoes_available = make_shoes(total_shoes)
-    cost = 0
-
-
-print(order_list)
+print (income)
