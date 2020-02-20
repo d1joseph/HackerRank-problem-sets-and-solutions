@@ -13,15 +13,13 @@ Output format
 - output the angle of MBC in degrees. Round to the nearest integer.
 
 '''
-from math import sqrt as sq
 
-#Lengths
-AB = float(input('Enter length of side AB: '))
-BC = float(input('Enter length of side BC: '))
+import math
 
-#finds the length of side AC when given AB and BC as parameters.
-def pythagoras_T(AB,BC):
-    AC = int(sq(AB**2 + BC**2))
-    return 'AC length is ' + str(AC)
+AB,BC = int(input()),int(input())
 
-print(pythagoras_T(AB,BC))
+def find_angle_MBC(AB, AC):
+    MBC = math.degrees(math.atan2(AB,BC))
+    return MBC
+
+print(str(int(round(find_angle_MBC(AB, BC))))+ '°')
