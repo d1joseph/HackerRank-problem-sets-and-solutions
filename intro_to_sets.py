@@ -7,7 +7,6 @@ Line 1 contains the integer, N, the total elements in the array.
 Line 2 contains the N space seperated elements of the array.
 
 '''
-
 def average(arr):
     return sum(set(array))/len(set(array))
 
