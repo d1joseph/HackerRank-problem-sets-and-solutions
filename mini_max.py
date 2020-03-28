@@ -8,7 +8,8 @@ import sys
 
 # Complete the miniMaxSum function below.
 def miniMaxSum(arr):
-    min,max = sum(arr) - sorted(arr)[-1], sum(arr) -sorted(arr)[0]
+    sorted_arr = sorted(arr)
+    min,max = sum(arr) - sorted_arr[-1], sum(arr) - sorted_arr[0]
     print(str(min) + " " + str(max))
     
 if __name__ == '__main__':
