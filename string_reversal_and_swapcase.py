@@ -1,4 +1,4 @@
-#a simple function that takes a space seperated string, reverses the order of words and inverts the casing.
+#a simple function that takes a space seperated string, reverses the order of words and inverts the casing. 
 
 def reverse_words_order_and_swap_cases(sentence):
     reverse_sentence = sentence.split(' ')
@@ -12,6 +12,5 @@ def reverse_words_order_and_swap_cases(sentence):
         string_to_list[i].upper()
     
     return string_to_list.swapcase()
-
 
 print(reverse_words_order_and_swap_cases('aWESOME is cODING'))
