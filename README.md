@@ -1,6 +1,3 @@
 # HackerRank-problem-sets-and-solutions
-Some algorithms for hackerrank problems for future learning purposes.
-
-I intend to revisit this repo over time to optimise time/complexity.
-
-Most of what is written here is naive but will be lessons for later.
+Some algorithms for hackerrank problems - also for future me to look back and learning from.
+What is written here is likely naive at first attempt. I intend to revisit this repo over time to optimise time/complexity.
