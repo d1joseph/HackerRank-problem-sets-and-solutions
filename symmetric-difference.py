@@ -6,15 +6,9 @@ The term symmetric difference indicates those values that exist in either M or N
 """
 
 #input and preprocess
-m_len, m = input(), input().split()
-n_len, n = input(), input().split()
+m_len, m = input(), list(map(int, input().split()))
+n_len, n = input(), list(map(int, input().split()))
 
-
-def find_symmetric_difference(m, n):
-    o = set(sorted([int(i) for i in m+n], reverse=True))
-    
-    for i in o:
-        print(i)
     
 
 if __name__ == "__main__":
