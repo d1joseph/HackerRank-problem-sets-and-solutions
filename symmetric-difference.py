@@ -5,11 +5,18 @@ The term symmetric difference indicates those values that exist in either M or N
 
 """
 
-#input and preprocess
-m_len, m = input(), list(map(int, input().split()))
-n_len, n = input(), list(map(int, input().split()))
+#input
+m_len = input()
+m = list(map(int, input().split()))
+m_set = set(m)
+n_len = input()
+n = list(map(int, input().split()))
+n_set = set(n)
+symm_diff = []
 
-    
+for i in m+n:
+    if not m_set.intersection(n_set):
+        symm_diff.append(i)
 
 if __name__ == "__main__":
     pass
