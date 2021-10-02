@@ -1,6 +1,4 @@
 # https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
-import re
-
 
 class Solution:
     # 69 ms
